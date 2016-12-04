@@ -21,4 +21,9 @@
         android:id="@+id/transformer_layer"
         android:title="Layer"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/transformer_scale"
+        android:title="Scale"
+        app:showAsAction="never" />
 </menu>
