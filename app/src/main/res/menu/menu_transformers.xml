@@ -16,4 +16,9 @@
         android:id="@+id/transformer_zoom_out"
         android:title="ZoomOut"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/transformer_layer"
+        android:title="Layer"
+        app:showAsAction="never" />
 </menu>

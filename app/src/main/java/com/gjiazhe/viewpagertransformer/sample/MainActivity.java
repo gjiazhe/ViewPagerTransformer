@@ -11,7 +11,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.gjiazhe.viewpagertransformer.CubePageTransformer;
 import com.gjiazhe.viewpagertransformer.DepthPageTransformer;
+import com.gjiazhe.viewpagertransformer.LayerTransformer;
 import com.gjiazhe.viewpagertransformer.ZoomOutPageTransformer;
 
 import java.util.ArrayList;
@@ -58,7 +60,10 @@ public class MainActivity extends AppCompatActivity {
                 pageTransformer = new DepthPageTransformer();
                 break;
             case R.id.transformer_zoom_out:
-                pageTransformer =  new ZoomOutPageTransformer();
+                pageTransformer = new ZoomOutPageTransformer();
+                break;
+            case R.id.transformer_layer:
+                pageTransformer = new LayerTransformer();
                 break;
         }
         viewPager.setPageTransformer(true, pageTransformer);
