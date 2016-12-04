@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/transformer_default"
+        android:title="Default"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/transformer_depth"
+        android:title="Depth"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/transformer_zoom_out"
+        android:title="ZoomOut"
+        app:showAsAction="never" />
+</menu>
