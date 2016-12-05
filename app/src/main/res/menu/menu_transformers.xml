@@ -31,4 +31,9 @@
         android:id="@+id/transformer_flip"
         android:title="Flip"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/transformer_accordion"
+        android:title="Accordion"
+        app:showAsAction="never" />
 </menu>
