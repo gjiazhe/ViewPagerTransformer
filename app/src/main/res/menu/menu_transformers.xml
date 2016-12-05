@@ -41,4 +41,9 @@
         android:id="@+id/transformer_fade"
         android:title="Fade"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/transformer_cube"
+        android:title="Cube"
+        app:showAsAction="never" />
 </menu>

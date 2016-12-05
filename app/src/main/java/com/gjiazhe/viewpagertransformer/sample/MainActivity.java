@@ -81,6 +81,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.transformer_fade:
                 pageTransformer = new FadePageTransformer();
                 break;
+            case R.id.transformer_cube:
+                pageTransformer = new CubePageTransformer();
+                break;
         }
         viewPager.setPageTransformer(true, pageTransformer);
         actionBar.setTitle(item.getTitle());
