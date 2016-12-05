@@ -8,6 +8,8 @@ import android.view.View;
  */
 
 public class ScalePageTransformer implements ViewPager.PageTransformer {
+
+    // The scale ratio when the page is just out of screen.
     private float finalScale;
 
     public ScalePageTransformer() {

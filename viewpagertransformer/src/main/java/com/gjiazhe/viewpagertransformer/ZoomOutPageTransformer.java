@@ -17,8 +17,8 @@ public class ZoomOutPageTransformer implements ViewPager.PageTransformer {
     }
 
     public ZoomOutPageTransformer(float minScale, float minAlpha) {
-        this.minScale = minScale;
-        this.minAlpha = minAlpha;
+        setMinScale(minScale);
+        setMinAlpha(minAlpha);
     }
 
     public void transformPage(View page, float position) {
@@ -45,7 +45,11 @@ public class ZoomOutPageTransformer implements ViewPager.PageTransformer {
             page.setScaleY(scaleFactor);
 
             // Fade the page relative to its size.
-            page.setAlpha(minAlpha + (scaleFactor - minScale) / (1 - minScale) * (1 - minAlpha));
+            if (minScale == 1f || minAlpha == 1f) {
+                page.setAlpha(1f);
+            } else {
+                page.setAlpha(minAlpha + (scaleFactor - minScale) / (1 - minScale) * (1 - minAlpha));
+            }
 
         } else { // (1,+Infinity]
             // This page is way off-screen to the right.
@@ -58,6 +62,9 @@ public class ZoomOutPageTransformer implements ViewPager.PageTransformer {
     }
 
     public void setMinScale(float minScale) {
+        if (minScale < 0 || minScale > 1) {
+            throw new IllegalArgumentException("the min scale must be between 0 to 1");
+        }
         this.minScale = minScale;
     }
 
@@ -66,6 +73,9 @@ public class ZoomOutPageTransformer implements ViewPager.PageTransformer {
     }
 
     public void setMinAlpha(float minAlpha) {
+        if (minAlpha < 0 || minAlpha >1) {
+            throw new IllegalArgumentException("the min alpha must be between 0 to 1");
+        }
         this.minAlpha = minAlpha;
     }
 }
