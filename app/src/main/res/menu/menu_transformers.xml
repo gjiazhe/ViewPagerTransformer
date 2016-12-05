@@ -26,4 +26,9 @@
         android:id="@+id/transformer_scale"
         android:title="Scale"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/transformer_flip"
+        android:title="Flip"
+        app:showAsAction="never" />
 </menu>

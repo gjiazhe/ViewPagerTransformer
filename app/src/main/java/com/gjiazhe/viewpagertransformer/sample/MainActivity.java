@@ -13,6 +13,7 @@ import android.view.MenuItem;
 
 import com.gjiazhe.viewpagertransformer.CubePageTransformer;
 import com.gjiazhe.viewpagertransformer.DepthPageTransformer;
+import com.gjiazhe.viewpagertransformer.FlipPageTransformer;
 import com.gjiazhe.viewpagertransformer.LayerTransformer;
 import com.gjiazhe.viewpagertransformer.ScalePageTransformer;
 import com.gjiazhe.viewpagertransformer.ZoomOutPageTransformer;
@@ -68,6 +69,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.transformer_scale:
                 pageTransformer = new ScalePageTransformer();
+                break;
+            case R.id.transformer_flip:
+                pageTransformer = new FlipPageTransformer();
                 break;
         }
         viewPager.setPageTransformer(true, pageTransformer);
