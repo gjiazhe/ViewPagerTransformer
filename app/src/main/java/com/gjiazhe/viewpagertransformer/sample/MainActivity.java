@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         viewPager.setPageTransformer(true, pageTransformer);
+        viewPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
         actionBar.setTitle(item.getTitle());
         return true;
     }

@@ -23,14 +23,13 @@ public class MyFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment, container, false);
-        textView = (TextView) view.findViewById(R.id.text_view);
-        return view;
+        return inflater.inflate(R.layout.fragment, container, false);
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        textView = (TextView) view.findViewById(R.id.text_view);
         textView.setBackgroundColor(bgColor);
         textView.setText("Page " + pos);
     }
