@@ -36,4 +36,9 @@
         android:id="@+id/transformer_accordion"
         android:title="Accordion"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/transformer_fade"
+        android:title="Fade"
+        app:showAsAction="never" />
 </menu>

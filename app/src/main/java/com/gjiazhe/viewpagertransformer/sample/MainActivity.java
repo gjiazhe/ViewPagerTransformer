@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import com.gjiazhe.viewpagertransformer.AccordionPageTransformer;
 import com.gjiazhe.viewpagertransformer.CubePageTransformer;
 import com.gjiazhe.viewpagertransformer.DepthPageTransformer;
+import com.gjiazhe.viewpagertransformer.FadePageTransformer;
 import com.gjiazhe.viewpagertransformer.FlipPageTransformer;
 import com.gjiazhe.viewpagertransformer.LayerTransformer;
 import com.gjiazhe.viewpagertransformer.ScalePageTransformer;
@@ -76,6 +77,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.transformer_accordion:
                 pageTransformer = new AccordionPageTransformer();
+                break;
+            case R.id.transformer_fade:
+                pageTransformer = new FadePageTransformer();
                 break;
         }
         viewPager.setPageTransformer(true, pageTransformer);
