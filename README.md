@@ -10,6 +10,7 @@ A practice refers to https://developer.android.com/training/animation/screen-sli
 ![Accordion](img/Accordion.gif)
 ![Fade](img/Fade.gif)
 ![Cube](img/Cube.gif)
+![Door](img/Door.gif)
 
 ## License
 
