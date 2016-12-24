@@ -46,4 +46,9 @@
         android:id="@+id/transformer_cube"
         android:title="Cube"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/transformer_door"
+        android:title="Door"
+        app:showAsAction="never" />
 </menu>
